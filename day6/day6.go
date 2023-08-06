@@ -16,7 +16,7 @@ func main() {
 }
 
 func findStartOfMessageMarker(input string) int {
-	list := ""
+	var list string
 	for i := 0; i < len(input); i++ {
 		for j := 0; j < len(list); j++ {
 			if list[j] == input[i] {

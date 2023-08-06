@@ -9,8 +9,8 @@ import (
 	"strings"
 )
 
-const DISK_SPACE = 70000000
-const REQUIRED_SPACE = 30000000
+const diskSpace = 70000000
+const requiredSpace = 30000000
 
 type Node struct {
 	name     string
@@ -107,10 +107,11 @@ func main() {
 			}
 		}
 	}
+
 	var sum uint
 	sum = 0
 	var toDelete uint
-	toDelete = REQUIRED_SPACE - (DISK_SPACE - tree.root.size)
+	toDelete = requiredSpace - (diskSpace - tree.root.size)
 	var delete uint
 	delete = math.MaxUint32
 	calcSum(tree.root, &sum, toDelete, &delete)
