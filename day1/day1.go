@@ -10,6 +10,8 @@ import (
 
 func main() {
 	file, err := os.Open("input.in")
+	defer file.Close()
+
 	if err != nil {
 		log.Fatal(err)
 	}
