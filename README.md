@@ -2,4 +2,4 @@
 
 ### Purpose
 
-Solving Advent of Code problems is mainly about getting familiar with new programming language - Go.
+Solving Advent of Code problems is mainly about getting familiar with a new programming language - Go.
